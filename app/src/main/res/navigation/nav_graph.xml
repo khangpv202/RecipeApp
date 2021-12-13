@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/recipeListFragment">
+
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="com.example.recipe.ui.list.RecipeListFragment"
+        android:label="fragment_recipe_list"
+        tools:layout="@layout/fragment_recipe_list">
+        <action
+            android:id="@+id/action_recipeListFragment_to_addRecipeFragment"
+            app:destination="@id/addRecipeFragment" >
+            <argument
+                android:name="recipe"
+                app:argType="com.example.recipe.data.entity.Recipe"/>
+        </action>
+    </fragment>
+    <dialog
+        android:id="@+id/photoDialog"
+        android:name="com.example.recipe.ui.dialog.PhotoDialog"
+        android:label="dialog_photo_dialog"
+        tools:layout="@layout/photo_dialog" />
+    <fragment
+        android:id="@+id/addRecipeFragment"
+        android:name="com.example.recipe.ui.add.AddAndEditRecipeFragment"
+        android:label="fragment_add_recipe"
+        tools:layout="@layout/fragment_add_recipe">
+        <action
+            android:id="@+id/action_addRecipeFragment_to_photoDialog"
+            app:destination="@id/photoDialog" />
+    </fragment>
+</navigation>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RecipeActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recipe_list_title">Recipe List</string>
+    <string name="recipe_list_type">Filter by Type</string>
+    <string name="hint_enter_step_by_step">Enter step by step</string>
+    <string name="hint_enter_required_ingredients">enter required ingredients</string>
+    <string name="photo_description">description</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="select_photo">Select Photo</string>
+    <string name="save_recipe">Save Recipe</string>
+    <string name="enter_recipe_name">Enter recipe name</string>
+    <string name="delete_recipe">Delete Recipe</string>
+    <string name="add_new_recipe">Add New Recipe</string>
+    <string name="edit_recipe">Edit Recipe</string>
+</resources>
